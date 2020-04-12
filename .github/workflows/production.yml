@@ -22,6 +22,7 @@ jobs:
     strategy:
       matrix:
         node_version: [12.x]
+    steps:
     - name: Clean
       uses: heowc/action-hexo@master
       with:
