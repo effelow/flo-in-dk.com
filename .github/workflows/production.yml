@@ -21,7 +21,7 @@ jobs:
 
     strategy:
       matrix:
-          node_version: [8.x, 10.x, 12.x]
+          node_version: [12.x]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -62,4 +62,4 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: ${{ secrets.AWS_REGION }}
         SOURCE_DIR: "build"
-        
+
