@@ -96,19 +96,15 @@ ignore:
 theme: landscape
 
 # Deployment
-## Docs: https://hexo.io/docs/deployment.html
+## Use this to deploy directly from local client (e.g. VS Code)
 #deploy:
-#  type: ''
+#  type: aws-s3
+#  region: eu-central-1 # eu-west-1 < this is mine
+#  bucket: flo-in-dk.com
 
-
+# Deployment via github
+## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: aws-s3
-  region: eu-central-1 # eu-west-1 < this is mine
-  bucket: flo-in-dk.com
-
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-#deploy:
-#  type: git
-#  repo: git@github.com:effelow/flo-in-dk.com.git
-#  branch: master
+  type: git
+  repo: git@github.com:effelow/flo-in-dk.com.git
+  branch: master

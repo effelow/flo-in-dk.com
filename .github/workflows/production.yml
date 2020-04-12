@@ -28,30 +28,20 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    # Runs a single command using the runners shell
-    - name: Run a one-line script
-      run: echo Hello, world!
-
-    # Runs a set of commands using the runners shell
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
-
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-
-    - name: npm Install
+        
+    - name: Install Hexo CLI
       run: |
-        npm install
-    - name: Production Build
+        npm install -g hexo-cli
+    - name: Generate the hexo blog
       run: |
-        npm build
-    - name: Unit Tests
+        hexo generate
+    - name: Deploy Hexo
       run: |
-        npm test
+        hexo deploy
     - name: Deploy to S3 
       uses: jakejarvis/s3-sync-action@master
       with:
