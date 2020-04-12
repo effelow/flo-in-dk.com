@@ -15,6 +15,7 @@
     "hexo": "^4.0.0",
     "hexo-asset-link": "^2.0.1",
     "hexo-deployer-aws-s3": "^1.0.2",
+    "hexo-deployer-git": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-index": "^1.0.0",
