@@ -38,7 +38,7 @@ jobs:
         npm install hexo-cli
     - name: Generate the hexo blog
       run: |
-        hexo generate
+        bash hexo generate
     - name: Deploy Hexo
       run: |
         hexo deploy
