@@ -32,9 +32,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-        
+
     - name: Install Hexo CLI
       run: |
+        sudo chown -R $USER /usr/local/lib/node_modules
         npm install -g hexo-cli
     - name: Generate the hexo blog
       run: |
