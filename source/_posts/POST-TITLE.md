@@ -11,7 +11,7 @@ Der Flug geht von Stuttgart über Paris nach Billund in Dänemark. Billund ist a
 <--Hier noch ein Übergang->
 Alle Fragen sollten jetzt geklärt sein: Wie läuft das mit der Krankenversicherung? Wie viel Urlaub werde ich dieses Jahr haben. Wie komme ich jeden Tag zur Arbeit? Brauche ich ein Auto? Ab wann bekommt man ein Bankkonto. 
 
-<img src="POST-TITLE/whg_stuggi.jpg" width="600" alt="Verabschiedung zuhause" title="Verabschiedung zuhause" style="padding-top:20px">
+<img src="POST-TITLE/whg_stuggi.jpg" width="500" alt="Verabschiedung zuhause" title="Verabschiedung zuhause" style="padding-top:20px">
 
 <img src="POST-TITLE/koffer_3.jpg" width="300" alt="Ein Handgepäck plus Koffer hofffentlich unter 20kg - Not." title="Ein Handgepäck plus Koffer hofffentlich unter 20kg - Not." style="padding-top:20px">
 
