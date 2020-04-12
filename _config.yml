@@ -101,14 +101,14 @@ theme: landscape
 #  type: ''
 
 
-#deploy:
-#  type: aws-s3
-#  region: eu-central-1 # eu-west-1 < this is mine
-#  bucket: flo-in-dk.com
+deploy:
+  type: aws-s3
+  region: eu-central-1 # eu-west-1 < this is mine
+  bucket: flo-in-dk.com
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  reoo: git@github.com:effelow/flo-in-dk.com.git
-  branch: master
+#deploy:
+#  type: git
+#  repo: git@github.com:effelow/flo-in-dk.com.git
+#  branch: master
