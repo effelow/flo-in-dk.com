@@ -97,14 +97,20 @@ theme: landscape
 
 # Deployment
 ## Use this to deploy directly from local client (e.g. VS Code)
-#deploy:
-#  type: aws-s3
-#  region: eu-central-1 # eu-west-1 < this is mine
-#  bucket: flo-in-dk.com
+## https://github.com/nt3rp/hexo-deployer-s3
+deploy:
+  type: aws-s3
+  region: eu-central-1 #  Optional, see https://github.com/LearnBoost/knox#region
+  bucket: flo-in-dk.com
+  #aws_key: AWS_ACCESS_KEY_ID  #set the environment variable `AWS_ACCESS_KEY_ID` 
+  #aws_secret: AWS_SECRET_ACCESS_KEY #set the environment variable `AWS_SECRET_ACCESS_KEY`
+  #aws_cli_profile: <an AWS CLI profile name, e.g. 'default'> // Optional
+  #concurrency: <number of connections> // Optional
+  delete_removed: true # Default: true
 
 # Deployment via github
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo: git@github.com:effelow/flo-in-dk.com.git
-  branch: master
+#deploy:
+#  type: git
+#  repo: git@github.com:effelow/flo-in-dk.com.git
+#  branch: master
