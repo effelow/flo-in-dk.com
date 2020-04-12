@@ -35,8 +35,7 @@ jobs:
 
     - name: Install Hexo CLI
       run: |
-        sudo chown -R $USER /usr/local/lib/node_modules
-        npm install -g hexo-cli
+        npm install hexo-cli
     - name: Generate the hexo blog
       run: |
         hexo generate
