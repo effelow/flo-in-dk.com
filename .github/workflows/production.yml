@@ -47,7 +47,7 @@ jobs:
 
     - name: generate
       run: |
-        hexo generate
+        npx hexo generate
     - name: Deploy
       run: |
         hexo deploy
