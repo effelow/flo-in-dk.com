@@ -32,13 +32,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    name: NPM Install
-      run: |
-        npm install
 
     - name: Install Hexo CLI
       run: |
-        npm install -g hexo-cli
+        npm install hexo-cli
 
     - name: Install S3 Deploy
       run: |
