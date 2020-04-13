@@ -36,7 +36,7 @@ jobs:
     - name: Install Hexo CLI and Deployer S3
       run: |
         npm install hexo-cli
-        npm install hexo-deployer-s3 --save
+        npm i -S hexo-deployer-aws-s3  
         export PATH=usr/local/bin/hexo:$PATH
         echo $PATH
         which node
