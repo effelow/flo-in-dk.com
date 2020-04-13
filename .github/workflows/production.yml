@@ -42,7 +42,7 @@ jobs:
         echo $PATH
         which node
         which npm
-        dirname `find ~ -perm +0111 -type l -iname "hexo" | grep '/bin/hexo'`
+        ./ `find ~ -perm +0111 -type l -iname "hexo" | grep '/bin/hexo'`
 
     - name: Install S3 Deployer
       run: |
