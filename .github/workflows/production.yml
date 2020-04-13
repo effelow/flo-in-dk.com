@@ -36,6 +36,7 @@ jobs:
     - name: Install Hexo CLI
       run: |
         npm install hexo-cli
+        export PATH=usr/local/bin/hexo:$PATH
         echo $PATH
         which node
         which npm
