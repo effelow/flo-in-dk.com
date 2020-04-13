@@ -108,9 +108,4 @@ deploy:
   #concurrency: <number of connections> // Optional
   delete_removed: true # Default: true
 
-# Deployment via github
-## Docs: https://hexo.io/docs/deployment.html
-#deploy:
-#  type: git
-#  repo: git@github.com:effelow/flo-in-dk.com.git
-#  branch: master
+  
