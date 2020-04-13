@@ -36,6 +36,7 @@ jobs:
     - name: Install Hexo CLI
       run: |
         npm install hexo-cli
+        npm install hexo-deployer-s3 --save
         export PATH=usr/local/bin/hexo:$PATH
         echo $PATH
         which node
@@ -43,12 +44,11 @@ jobs:
 
     - name: Install S3 Deployer
       run: |
-        npm install hexo-deployer-s3 --save
-
-    - name: generate
+        
+    - name: Hexo generate
       run: |
         npx hexo generate
-    - name: Deploy
+    - name: Hexo deploy
       run: |
         npx hexo deploy
       env:
