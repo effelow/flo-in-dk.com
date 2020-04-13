@@ -35,10 +35,7 @@ jobs:
 
     - name: Install Hexo CLI
       run: |
-        mkdir ~/.npm-global
-        npm config set prefix '~/.npm-global'
-        export PATH=~/.npm-global/bin:$PATH
-        npm install -g hexo-cli
+        npm install hexo-cli
         echo $PATH
         which node
         which npm
