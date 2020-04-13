@@ -39,7 +39,9 @@ jobs:
         npm config set prefix '~/.npm-global'
         export PATH=~/.npm-global/bin:$PATH
         npm install hexo-cli
-        which hexo
+        echo $PATH
+        which node
+        which npm
 
     - name: Install S3 Deployer
       run: |
@@ -47,7 +49,6 @@ jobs:
 
     - name: generate
       run: |
-        which hexo
         hexo generate
     - name: Deploy
       run: |
