@@ -1,7 +1,9 @@
 # ZSH Configuration
 
 ##  Description
-My personal blog content. The Blog has been build with the Hexo Framework. Build and Deployment works using the new Actions Feature from Github. Deployed to AWS S3 Static Web Hosting.
+The project contains my personal blog content. As part of the technology to build this blog I used the Hexo Framework, a static site generator. These type of frameworks follow a new style of site building called Jamstack. New blog posts can be written in markdown language. The main advantage of Jamstack websites however is that they do not depend on a  webserver which, in turn, promises better dev experience, better performance, higher security. 
+
+Build and Deployment work by using the new Actions Feature from Github. Target hosting platform is AWS S3 Static Web Hosting.
 
 
 ## Work from others
@@ -19,7 +21,7 @@ My personal blog content. The Blog has been build with the Hexo Framework. Build
 
 ## Prerequs
 
-* git installed
+* Git installed
 * Node.JS installed
 
 ## Installation
