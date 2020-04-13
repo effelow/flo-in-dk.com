@@ -9,9 +9,6 @@ on:
     branches:
       - master
 
-  pull_request:
-    branches: [ master ]
-
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -33,11 +30,11 @@ jobs:
         args: generate
     - name: Deploy to S3 
       uses: heowc/action-hexo@master
+      with:
+        args: deploy
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      with:
-        args: deploy
 
       
 
