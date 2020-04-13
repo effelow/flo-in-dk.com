@@ -21,7 +21,7 @@ jobs:
 
     strategy:
       matrix:
-          node_version: [10.x]
+          node_version: [12.x]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -50,7 +50,7 @@ jobs:
         npx hexo generate
     - name: Deploy
       run: |
-        hexo deploy
+        npx hexo deploy
       env:
         AWS_S3_BUCKET: ${{ secrets.AWS_PRODUCTION_BUCKET_NAME }}
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
