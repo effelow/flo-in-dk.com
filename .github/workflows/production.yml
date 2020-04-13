@@ -9,6 +9,9 @@ on:
     branches:
       - master
 
+  pull_request:
+    branches: [ master ]
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -18,23 +21,38 @@ jobs:
 
     strategy:
       matrix:
-        node_version: [12.x]
+          node_version: [12.x]
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - name: Clean
-      uses: heowc/action-hexo@master
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
       with:
-        args: clean
-    - name: Generate
-      uses: heowc/action-hexo@master
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install Hexo CLI
+      run: |
+        npm install -g hexo-cli
+
+    - name: Install S3 Deploy
+      run: |
+        npm install hexo-deployer-s3 --save
+
+    - name: generate
+      run: |
+        hexo generate
+
+    - name: Deploy
+      run: |
+        hexo deploy
       with:
-        args: generate
-    - name: Deploy to S3 
-      uses: heowc/action-hexo@master
-      with:
-        args: deploy
+        args: --acl public-read --delete
       env:
+        AWS_S3_BUCKET: ${{ secrets.AWS_PRODUCTION_BUCKET_NAME }}
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-
-      
+        AWS_REGION: ${{ secrets.AWS_REGION }}
 

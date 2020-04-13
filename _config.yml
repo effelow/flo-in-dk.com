@@ -102,8 +102,8 @@ deploy:
   type: aws-s3
   region: eu-central-1 #  Optional, see https://github.com/LearnBoost/knox#region
   bucket: flo-in-dk.com
-  #aws_key: AWS_ACCESS_KEY_ID  #set the environment variable `AWS_ACCESS_KEY_ID` 
-  #aws_secret: AWS_SECRET_ACCESS_KEY #set the environment variable `AWS_SECRET_ACCESS_KEY`
+  aws_key: AWS_ACCESS_KEY_ID  #set the environment variable `AWS_ACCESS_KEY_ID` 
+  aws_secret: AWS_SECRET_ACCESS_KEY #set the environment variable `AWS_SECRET_ACCESS_KEY`
   #aws_cli_profile: <an AWS CLI profile name, e.g. 'default'> // Optional
   #concurrency: <number of connections> // Optional
   delete_removed: true # Default: true
