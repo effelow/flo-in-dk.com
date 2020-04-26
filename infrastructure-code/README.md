@@ -33,7 +33,7 @@ Download the repository and excecute and navigate into the deployment directory
 $ git clone git@github.com:effelow/flo-in-dk.com.git
 ```
 ```
-$ cd deployment
+$ cd infrastructure-code
 ```
 
 

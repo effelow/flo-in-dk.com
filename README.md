@@ -19,6 +19,8 @@ Build and Deployment work by using the new Actions Feature from Github. Target h
 [hexo-deployer-s3]:                         https://github.com/nt3rp/hexo-deployer-s3
 [deploying-a-react-app-to-aws-s3-with-github-actions]:                       https://medium.com/trackstack/deploying-a-react-app-to-aws-s3-with-github-actions-b1cb9ba75c95
 
+[infrastructure-code]: https://github.com/effelow/flo-in-dk.com/blob/master/infrastructure-code/README.md
+
 ## Prerequs
 
 * Git installed
@@ -40,7 +42,7 @@ The Github Actions listens on push events to the master branch. So any commit to
 git add .; git commit -m "test deploy"; git push
 ```
 
-Please also see the deployment of the underlying infrastructure under `deployment` directory in this repo.
+Please also see the deployment of the infrastructure in the [infrastructure-code].
 
 ## Future Work
 
