@@ -29,11 +29,13 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Use Node.js ${{ matrix.node-version }}
+      working-directory: ./static-site
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
 
     - name: Install Hexo CLI and Deployer S3
+      working-directory: ./static-site
       run: |
         npm install hexo-cli
         npm i -S hexo-deployer-aws-s3  
@@ -44,9 +46,11 @@ jobs:
 
 
     - name: Hexo generate
+      working-directory: ./static-site
       run: |
         npx hexo generate
     - name: Hexo deploy
+      working-directory: ./static-site
       run: |
         npx hexo deploy
       env:
