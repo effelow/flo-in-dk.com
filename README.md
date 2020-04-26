@@ -30,7 +30,10 @@ Build and Deployment work by using the new Actions Feature from Github. Target h
 
 Clone the repo
 ```console
-git clone git@github.com:effelow/flo-in-dk.com.git
+$ git clone git@github.com:effelow/flo-in-dk.com.git
+```
+```console
+$ cd static-site
 ```
 
 Use Hexo to create new posts or change existing post 
@@ -39,8 +42,9 @@ Use Hexo to create new posts or change existing post
 
 The Github Actions listens on push events to the master branch. So any commit to `master` will able the latest changes to the production blog.
 ```console
-git add .; git commit -m "test deploy"; git push
+$ git add .; git commit -m "test deploy"; git push
 ```
+
 
 Please also see the deployment of the infrastructure in the [infrastructure-code].
 
