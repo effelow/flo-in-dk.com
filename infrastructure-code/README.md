@@ -37,7 +37,7 @@ $ cd deployment
 ```
 
 
-## Deployemnt
+## Deployment
 
 From you local machine execute `synth`, `diff` and finally `deploy` to deploy the infrastructure for your static s3 website
 ```console
