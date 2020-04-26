@@ -1,5 +1,5 @@
 ---
-title: Bye, bye Stuttgart!
+title: Bye, bye Stuggi!
 date: 2020-02-01 16:55:41
 tags:
 ---
