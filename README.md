@@ -1,4 +1,4 @@
-# ZSH Configuration
+# Hexo Blog - flo-in-dk.com
 
 ##  Description
 The project contains my personal blog content. As part of the technology to build this blog I used the Hexo Framework, a static site generator. These type of frameworks follow a new style of site building called Jamstack. New blog posts can be written in markdown language. The main advantage of Jamstack websites however is that they do not depend on a  webserver which, in turn, promises better dev experience, better performance, higher security. 
@@ -33,12 +33,14 @@ git clone git@github.com:effelow/flo-in-dk.com.git
 
 Use Hexo to create new posts or change existing post 
 
-## Deployemnt
+## Deployment
 
 The Github Actions listens on push events to the master branch. So any commit to `master` will able the latest changes to the production blog.
 ```console
 git add .; git commit -m "test deploy"; git push
 ```
+
+Please also see the deployment of the underlying infrastructure under `deployment` directory in this repo.
 
 ## Future Work
 
