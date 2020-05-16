@@ -101,7 +101,7 @@ theme: landscape
 deploy:
   type: aws-s3
   region: AWS_REGION #  Optional, see https://github.com/LearnBoost/knox#region
-  bucket: AWS_PRODUCTION_BUCKET_NAME
+  bucket: www.flo-in-dk.com
   aws_key: AWS_ACCESS_KEY_ID  #set the environment variable `AWS_ACCESS_KEY_ID` 
   aws_secret: AWS_SECRET_ACCESS_KEY #set the environment variable `AWS_SECRET_ACCESS_KEY`
   #aws_cli_profile: <an AWS CLI profile name, e.g. 'default'> // Optional
