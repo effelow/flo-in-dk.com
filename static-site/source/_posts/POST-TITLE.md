@@ -18,7 +18,7 @@ Los geht's. :P
 
 <img src="POST-TITLE/whg_stuggi.jpg" width="600" alt="Kleine Abschiedsparty von zu Hause" title="Kleine Abschiedsparty von zu Hause" style="padding-top:20px">
 
-<img src="POST-TITLE/koffer_3.jpg" width="300" alt="Ein Handgepäck plus Koffer. Hofffentlich unter 20kg." title="Ein Handgepäck plus Koffer. Hofffentlich unter 20kg" style="padding-top:20px">
+<img src="POST-TITLE/koffer_3.jpg" width="300" alt="Ein Handgepäck plus Koffer. Hofffentlich unter 20kg." title="" style="padding-top:20px">
 
 <img src="POST-TITLE/koffer_2.jpg" width="600" alt="Socken - Check! Handyladekabel - Check! Zahnbürste - Check!" title="Zahnbürste - Check!" style="padding-top:20px">
 
