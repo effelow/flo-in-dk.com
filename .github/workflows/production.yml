@@ -37,7 +37,6 @@ jobs:
         echo $PATH
         which node
         which npm
-
     - name: Hexo generate
       run: |
         npx hexo generate
