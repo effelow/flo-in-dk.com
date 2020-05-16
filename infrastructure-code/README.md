@@ -23,7 +23,7 @@ The project contains the code to deploy the infrastructure for the [static-site]
 * Node.JS installed
 * AWS CDK installed
 * Fully fletched AWS Account addressable via AWS CLI
-* Registered domain under AWS route 53
+* Registered domain and hosted zone configured under AWS route 53
 
 ## Installation
 

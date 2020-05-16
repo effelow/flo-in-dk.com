@@ -1,1 +1,10 @@
-{}
+{
+  "hosted-zone:account=136438921898:domainName=flo-in-dk.com:region=eu-central-1": {
+    "Id": "/hostedzone/Z01482272HVUL4Q6XQG6D",
+    "Name": "flo-in-dk.com."
+  },
+  "hosted-zone:account=136438921898:domainName=flo-in-dk.com:region=us-east-1": {
+    "Id": "/hostedzone/Z01482272HVUL4Q6XQG6D",
+    "Name": "flo-in-dk.com."
+  }
+}

@@ -100,7 +100,7 @@ theme: landscape
 ## https://github.com/nt3rp/hexo-deployer-s3
 deploy:
   type: aws-s3
-  region: eu-central-1 #  Optional, see https://github.com/LearnBoost/knox#region
+  region: us-east-1 #  Optional, see https://github.com/LearnBoost/knox#region
   bucket: flo-in-dk.com
   aws_key: AWS_ACCESS_KEY_ID  #set the environment variable `AWS_ACCESS_KEY_ID` 
   aws_secret: AWS_SECRET_ACCESS_KEY #set the environment variable `AWS_SECRET_ACCESS_KEY`
