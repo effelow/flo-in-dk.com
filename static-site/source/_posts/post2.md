@@ -17,21 +17,21 @@ Der Flughafen liegt ca. 10 Autominuten vom Billund Zentrum entfernt. Obwohl auch
 
 <img src="post2/02.jpg" width="600" alt="Die Band hat 'nen eingebauten Bewegungsmelder und fängt an zu spielen. Eine Woche lang hab ich mehrmals täglich ein Ständchen bekommen. :D" title="" style="padding-top:20px">
 
-<img src="post2/03.jpg" width="300" alt="Irgend ein Gast hat wohl schon geahnt, was bald kommt." title="" style="padding-top:20px">
+<img src="post2/03.jpg" width="300" alt="Irgend ein Gast hat wohl schon geahnt, was bald passieren wird." title="" style="padding-top:20px">
 
 <img src="post2/04.jpg" width="300" alt="" title="" style="padding-top:20px">
 
 <img src="post2/05.jpg" width="300" alt="" title="" style="padding-top:20px">
 
-<img src="post2/06.jpg" width="300" alt="" title="" style="padding-top:20px">
+<img src="post2/06.jpg" width="300" alt="Das Zimmer" title="" style="padding-top:20px">
 
 <img src="post2/07.jpg" width="300" alt="" title="" style="padding-top:20px">
 
-<img src="post2/08.jpg" width="300" alt="Das Zimmer" title="" style="padding-top:20px">
+<img src="post2/08.jpg" width="300" alt="" title="" style="padding-top:20px">
 
-<img src="post2/09.jpg" width="300" alt="" title="" style="padding-top:20px">
+<img src="post2/09.jpg" width="300" alt="Das Bad" title="" style="padding-top:20px">
 
-<img src="post2/10.jpg" width="300" alt="Das Bad" title="" style="padding-top:20px">
+<img src="post2/10.jpg" width="300" alt="" title="" style="padding-top:20px">
 
 <img src="post2/11.jpg" width="300" alt="" title="" style="padding-top:20px">
 
