@@ -20,7 +20,7 @@ jobs:
         node-version: [12.x] 
     - name: Npm Install 
       run: | 
-        npm install aws-cdk 
+        npm install -g aws-cdk 
         npm install 
         npm run build 
     - name: Configure AWS Credentials 
