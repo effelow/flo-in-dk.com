@@ -10,28 +10,28 @@ defaults:
         working-directory: ./deployment
 
 jobs: 
-    diff: 
-        runs-on: ubuntu-latest 
-        steps: 
-        - uses: actions/checkout@v2 
-        - name: Use Node.js 12.x 
-          uses: actions/setup-node@v1 
-          with: 
-            node-version: [12.x] 
-        - name: Npm Install 
-            run: | 
-            npm install aws-cdk 
-            npm install 
-            npm run build 
-        - name: Configure AWS Credentials 
-            uses: aws-actions/configure-aws-credentials@v1 
-            with: 
-            aws-access-key-id: ${{ secrets.CDK_DEPLOYER_AWS_ACCESS_KEY_ID }} 
-            aws-secret-access-key: ${{ secrets.CDK_DEPLOYER_AWS_SECRET_ACCESS_KEY }} 
-            aws-region: ${{ secrets.AWS_REGION }} 
-        - name: cdk diff 
-            run: | 
-            cdk diff --context domain=flo-in-dk.com --context subdomain=www 
+  pipeline:
+    runs-on: ubuntu-latest 
+    steps: 
+    - uses: actions/checkout@v2 
+    - name: Use Node.js 12.x 
+      uses: actions/setup-node@v1 
+      with:
+        node-version: [12.x] 
+    - name: Npm Install 
+      run: | 
+        npm install aws-cdk 
+        npm install 
+        npm run build 
+    - name: Configure AWS Credentials 
+      uses: aws-actions/configure-aws-credentials@v1 
+      with: 
+        aws-access-key-id: ${{ secrets.CDK_DEPLOYER_AWS_ACCESS_KEY_ID }} 
+        aws-secret-access-key: ${{ secrets.CDK_DEPLOYER_AWS_SECRET_ACCESS_KEY }} 
+        aws-region: ${{ secrets.AWS_REGION }} 
+    - name: cdk diff 
+        run: | 
+        cdk diff --context domain=flo-in-dk.com --context subdomain=www 
 
 
 
