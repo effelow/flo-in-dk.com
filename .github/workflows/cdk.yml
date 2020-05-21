@@ -1,14 +1,16 @@
-# This is a basic workflow to help you get started with Actions
-name: CDK
-# Controls when the action will run. Triggers the workflow on push or pull request# events but only for the master branchon: push: branches: [ feature/cdk_pipeline ] #pull_request: # branches: [ master ]
+name: Test
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
 on:
-    push:
-        branches: [ master ]
+  push:
+    branches:
+      - master
 
-defaults: 
-    run: 
-        working-directory: ./deployment
 
+defaults:
+  run:
+    working-directory: ./infrastructure-code
 jobs: 
   pipeline:
     runs-on: ubuntu-latest
