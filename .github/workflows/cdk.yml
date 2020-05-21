@@ -4,8 +4,7 @@ name: CDK
 on:
     push:
         branches: [ master ]
-        paths:
-            - 'infrastructure-code/**'
+
 
 defaults: 
     run: 
