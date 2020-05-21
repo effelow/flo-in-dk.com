@@ -30,7 +30,7 @@ jobs:
         aws-secret-access-key: ${{ secrets.CDK_DEPLOYER_AWS_SECRET_ACCESS_KEY }} 
         aws-region: ${{ secrets.AWS_REGION }} 
     - name: cdk diff 
-        run: | 
+      run: | 
         cdk diff --context domain=flo-in-dk.com --context subdomain=www 
 
 
