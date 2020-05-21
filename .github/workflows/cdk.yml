@@ -21,7 +21,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm install
+    - name: Install Hexo CLI and Deployer S3
+      run: |
+        npm install hexo-cli
     - name: Configure AWS Credentials 
       uses: aws-actions/configure-aws-credentials@v1 
       with: 
