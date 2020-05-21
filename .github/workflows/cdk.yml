@@ -37,8 +37,3 @@ jobs:
 
 
 
-
- #uses: youyo/aws-cdk-github-actions@master #with: # cdk_subcommand: 'diff' # actions_comment: true #env: # AWS_ACCESS_KEY_ID: ${{ secrets.CDK_DEPLOYER_AWS_ACCESS_KEY_ID }} # AWS_SECRET_ACCESS_KEY: ${{ secrets.CDK_DEPLOYER_AWS_SECRET_ACCESS_KEY }} # AWS_DEFAULT_REGION: ${{ secrets.AWS_REGION }} 
-
-
-
