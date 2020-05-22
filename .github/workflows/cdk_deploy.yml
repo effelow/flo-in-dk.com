@@ -31,7 +31,5 @@ jobs:
         aws-region: ${{ secrets.AWS_REGION }} 
     - name: cdk deploy
       run: | 
-
-
-      cdk deploy  --context domain=${{ secrets.DOMAIN }} --context subdomain=${{ secrets.SUBDOMAIN }}
+        cdk deploy --context domain=${{ secrets.DOMAIN }} --context subdomain=${{ secrets.SUBDOMAIN }}
 
