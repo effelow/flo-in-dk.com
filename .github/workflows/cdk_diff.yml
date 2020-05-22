@@ -31,4 +31,6 @@ jobs:
         aws-region: ${{ secrets.AWS_REGION }} 
     - name: cdk diff
       run: | 
+        git branch
+        git merge master
         cdk diff  --context domain=${{ secrets.DOMAIN }} --context subdomain=${{ secrets.SUBDOMAIN }}
