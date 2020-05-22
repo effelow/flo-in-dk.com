@@ -31,6 +31,7 @@ jobs:
         aws-region: ${{ secrets.AWS_REGION }} 
     - name: cdk deploy
       run: | 
-        git branch
-        cdk deploy  --context domain=${{ secrets.DOMAIN }} --context subdomain=${{ secrets.SUBDOMAIN }}
+
+
+      cdk deploy  --context domain=${{ secrets.DOMAIN }} --context subdomain=${{ secrets.SUBDOMAIN }}
 
