@@ -1,4 +1,8 @@
-# This is a basic workflow to help you get started with Actions
+# This workflow is triggered on direct push to master or when accepting PR on master
+# 1) It checks out the repo
+# 2) Install NPM and aws cdk
+# 3) Executes cdk diff and shows the diff in case ther are any
+
 name: cdk_diff
 # Controls when the action will run. Triggers the workflow on push or pull request# events but only for the master branchon: push: branches: [ feature/cdk_pipeline ] #pull_request: # branches: [ master ]
 on:
@@ -10,26 +14,17 @@ defaults:
         working-directory: ./infrastructure-code
 
 jobs: 
-  pipeline:
+  aws_cdk:
     runs-on: ubuntu-latest 
     steps: 
     - uses: actions/checkout@v2 
-    - name: Use Node.js 12.x 
-      uses: actions/setup-node@v1 
-      with:
-        node-version: 12.x
-    - name: Npm Install 
-      run: | 
-        npm install -g aws-cdk 
-        npm install 
-        npm run build 
-    - name: Configure AWS Credentials 
-      uses: aws-actions/configure-aws-credentials@v1 
-      with: 
-        aws-access-key-id: ${{ secrets.CDK_DEPLOYER_AWS_ACCESS_KEY_ID }} 
-        aws-secret-access-key: ${{ secrets.CDK_DEPLOYER_AWS_SECRET_ACCESS_KEY }} 
-        aws-region: ${{ secrets.AWS_REGION }} 
     - name: cdk diff
-      run: | 
-        cdk diff  --context domain=${{ secrets.DOMAIN }} --context subdomain=${{ secrets.SUBDOMAIN }}
-
+      uses: youyo/aws-cdk-github-actions@master
+      with:
+        cdk_subcommand: 'diff'
+        actions_comment: true
+        cdk_stack: 'MyStaticSite'
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.CDK_DEPLOYER_AWS_ACCESS_KEY_ID }} 
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.CDK_DEPLOYER_AWS_SECRET_ACCESS_KEY }} 
+        AWS_DEFAULT_REGION: ${{ secrets.AWS_REGION }}

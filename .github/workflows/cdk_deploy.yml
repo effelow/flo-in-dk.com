@@ -1,4 +1,10 @@
-# This is a basic workflow to help you get started with Actions
+# This workflow is triggered on direct push to master or when accepting PR on master
+# 1) It checks out the repo
+# 2) Install NPM and aws cdk
+# 3) Executes cdk deploy to deploy all stacks  of the app into the AWS account
+
+# Todo: Curl the website and see if still works fine
+
 name: cdk_deploy
 # Controls when the action will run. Triggers the workflow on push or pull request# events but only for the master branchon: push: branches: [ feature/cdk_pipeline ] #pull_request: # branches: [ master ]
 on:
@@ -32,4 +38,6 @@ jobs:
     - name: cdk deploy
       run: | 
         cdk deploy --context domain=${{ secrets.DOMAIN }} --context subdomain=${{ secrets.SUBDOMAIN }}
+
+
 
