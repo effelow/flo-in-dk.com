@@ -1,7 +1,7 @@
 # This workflow is triggered on direct push to master or when accepting PR on master
 # 1) It checks out the repo
-# 2) Install NPM and aws cdk
-# 3) Executes cdk diff and shows the diff in case ther are any
+# 2) Uses public cdk action from here: https://github.com/youyo/aws-cdk-github-actions
+# 3) Executes cdk diff and shows the diff in case there are any
 
 name: cdk_diff
 # Controls when the action will run. Triggers the workflow on push or pull request# events but only for the master branchon: push: branches: [ feature/cdk_pipeline ] #pull_request: # branches: [ master ]
@@ -28,3 +28,4 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.CDK_DEPLOYER_AWS_ACCESS_KEY_ID }} 
         AWS_SECRET_ACCESS_KEY: ${{ secrets.CDK_DEPLOYER_AWS_SECRET_ACCESS_KEY }} 
         AWS_DEFAULT_REGION: ${{ secrets.AWS_REGION }}
+
