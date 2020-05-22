@@ -39,6 +39,8 @@ $ cd infrastructure-code
 
 ## Deployment
 
+![](https://github.com/actions/flo-in-dk.com/workflows/.github/workflows/cdk_deploy.yml/badge.svg)
+
 From you local machine execute `synth`, `diff` and finally `deploy` to deploy the infrastructure for your static s3 website
 ```console
 $ cdk synth|diff|deploy \

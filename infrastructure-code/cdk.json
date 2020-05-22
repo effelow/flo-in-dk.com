@@ -1,5 +1,7 @@
   
 {
     "app": "node index",
-    "aws-cdk:diffNoFail": "true"
+    "aws-cdk:diffNoFail": "true",
+    "domain": "flo-in-dk.com",
+    "subdomain": "www"
 }
