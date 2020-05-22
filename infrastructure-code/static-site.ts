@@ -52,7 +52,7 @@ export class StaticSite extends Construct {
                 acmCertRef: certificateArn,
                 names: [ siteDomain ],
                 sslMethod: cloudfront.SSLMethod.SNI,
-                securityPolicy: cloudfront.SecurityPolicyProtocol.TLS_V1_1_2016,
+                securityPolicy: cloudfront.SecurityPolicyProtocol.TLS_V1_2_2018,
             },
             originConfigs: [
                 {
