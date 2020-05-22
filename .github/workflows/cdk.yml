@@ -31,4 +31,4 @@ jobs:
         aws-region: ${{ secrets.AWS_REGION }} 
     - name: cdk diff
       run: | 
-        cdk diff --fail true --context domain=${{ secrets.DOMAIN }} --context subdomain=${{ secrets.SUBDOMAIN }}
+        cdk diff --fail 0 --context domain=${{ secrets.DOMAIN }} --context subdomain=${{ secrets.SUBDOMAIN }}
