@@ -3,8 +3,6 @@
 # 2) Uses public cdk action from here: https://github.com/youyo/aws-cdk-github-actions
 # 3) Executes cdk diff and shows the diff in case there are any
 
-
-
 name: cdk_diff
 
 on:
