@@ -24,7 +24,6 @@ jobs:
       uses: effelow/aws-cdk-github-actions@master
       with:
         cdk_subcommand: 'diff'
-        actions_comment: true
         cdk_stack: 'MyStaticSite'
         cdk_app: 'node ./index.js'
       env:
@@ -32,4 +31,4 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.CDK_DEPLOYER_AWS_SECRET_ACCESS_KEY }} 
         AWS_DEFAULT_REGION: ${{ secrets.AWS_REGION }}
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-#
+
