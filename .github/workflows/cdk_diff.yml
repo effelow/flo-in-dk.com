@@ -21,7 +21,7 @@ jobs:
     steps: 
     - uses: actions/checkout@v2 
     - name: cdk diff
-      uses: effelow/aws-cdk-github-actions@master
+      uses: youyo/aws-cdk-github-actions@master
       with:
         cdk_subcommand: 'diff'
         actions_comment: true
