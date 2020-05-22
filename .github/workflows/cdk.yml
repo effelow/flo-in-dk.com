@@ -29,6 +29,6 @@ jobs:
         aws-access-key-id: ${{ secrets.CDK_DEPLOYER_AWS_ACCESS_KEY_ID }} 
         aws-secret-access-key: ${{ secrets.CDK_DEPLOYER_AWS_SECRET_ACCESS_KEY }} 
         aws-region: ${{ secrets.AWS_REGION }} 
-    - name: cdk diff 
+    - name: cdk diff --fail true
       run: | 
         cdk diff --context domain=${{ secrets.DOMAIN }} --context subdomain=${{ secrets.SUBDOMAIN }}
