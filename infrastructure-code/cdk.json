@@ -1,4 +1,5 @@
   
 {
-    "app": "node index"
+    "app": "node index",
+    "aws-cdk:diffNoFail": "true"
 }
