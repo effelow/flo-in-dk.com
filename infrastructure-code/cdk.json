@@ -1,6 +1,6 @@
   
 {
-    "app": "node index",
+    "app": "node index.js",
     "aws-cdk:diffNoFail": "true",
     "domain": "flo-in-dk.com",
     "subdomain": "www"
