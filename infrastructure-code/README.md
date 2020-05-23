@@ -38,6 +38,21 @@ $ cd infrastructure-code
 
 
 ## Deployment
+<!-- 
+Github Action badge to document the deployment status 
+URL format:
+https://github.com/{github_id}/{repository}/workflows/{workflow_name}/badge.svg
+
+-->
+![](https://github.com/effelow/flo-in-dk.com/workflows/cdk_deploy/badge.svg)
+
+[cdk_deploy.yml]: https://github.com/effelow/flo-in-dk.com/blob/master/.github/workflows/cdk_deploy.yml
+[cdk_diff.yml]: https://github.com/effelow/flo-in-dk.com/blob/master/.github/workflows/cdk_diff.yml
+
+### Github Action Workflow
+
+The workflow runs a `cdk diff` when generating a PR to master ([cdk_diff.yml])  and `cdk deploy` when the PR is accepted ([cdk_deploy.yml]).
+
 
 From you local machine execute `synth`, `diff` and finally `deploy` to deploy the infrastructure for your static s3 website
 ```console
@@ -49,4 +64,4 @@ $ cdk synth|diff|deploy \
 ```
 
 ## Future Work
-* Manage Deployment with Github Actions
+* Collect Statistics about static web page

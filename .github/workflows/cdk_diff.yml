@@ -1,4 +1,8 @@
-# This is a basic workflow to help you get started with Actions
+# This workflow is triggered when generating a PR on master
+# 1) It checks out the repo
+# 2) Uses public cdk action from here: https://github.com/youyo/aws-cdk-github-actions
+# 3) Executes cdk diff and shows the diff in case there are any
+
 name: cdk_diff
 # Controls when the action will run. Triggers the workflow on push or pull request# events but only for the master branchon: push: branches: [ feature/cdk_pipeline ] #pull_request: # branches: [ master ]
 on:
@@ -32,4 +36,3 @@ jobs:
     - name: cdk diff
       run: | 
         cdk diff  --context domain=${{ secrets.DOMAIN }} --context subdomain=${{ secrets.SUBDOMAIN }}
-

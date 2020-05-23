@@ -40,13 +40,12 @@ Use Hexo to create new posts or change existing post
 
 ## Deployment
 
-The Github Actions listens on push events to the master branch. So any commit to `master` will able the latest changes to the production blog.
+Since it is a one person project, the Github Actions is triggered on push events to the master branch. So any commit to `master` will able the latest changes to the production blog.
 ```console
 $ git add .; git commit -m "test deploy"; git push
 ```
 
-
-Please also see the deployment of the infrastructure in the [infrastructure-code].
+For the deployement of the infrastructure, please note the [infrastructure-code] section.
 
 ## Future Work
 
