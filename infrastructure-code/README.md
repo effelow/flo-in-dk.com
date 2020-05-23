@@ -39,7 +39,14 @@ $ cd infrastructure-code
 
 ## Deployment
 
-![](https://github.com/actions/flo-in-dk.com/workflows/.github/workflows/cdk_deploy.yml/badge.svg)
+[cdk_deploy.yml]: https://github.com/effelow/flo-in-dk.com/blob/master/.github/workflows/cdk_deploy.yml
+[cdk_diff.yml]: https://github.com/effelow/flo-in-dk.com/blob/master/.github/workflows/cdk_diff.yml
+
+### Github Action Workflow
+
+The workflow runs a `cdk diff` when generating a PR to master ([cdk_diff.yml])  and `cdk deploy` when the PR is accepted ([cdk_deploy.yml]).
+
+![](https://github.com/actions/flo-in-dk.com/blob/master/.github/workflows/cdk_deploy.yml/badge.svg)
 
 From you local machine execute `synth`, `diff` and finally `deploy` to deploy the infrastructure for your static s3 website
 ```console
