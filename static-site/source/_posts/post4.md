@@ -4,9 +4,9 @@ date: 2021-03-14 01:07:30
 tags:
 ---
 
-Der Gang zur Apotheke gibt es auf den ersten Blick nichts Auffälliges. In den Verkaufsräumen werden Hustenbonbons, Zahnpasta und Regenschirme angeboten. Die verschreibungspflichtigen, sowie nicht verschreibungspflichtigen Medikamente gibt es hinter der Theke. 
+Die dänischen Apotheke sind ähnlich aufgebaut wie die in Deutschland. In den Verkaufsräumen werden Hustenbonbons, Zahnpasta und Regenschirme angeboten. Die verschreibungspflichtigen, sowie nicht verschreibungspflichtigen Medikamente gibt es hinter der Theke. 
 
-Wie fast überall in Dänemark muss man  in den meisten Apotheken ein Nummer ziehen. Wird die Nummer aufgerufen muss man zu entsprechenden Verkaufstheke gehen und sein Anliegen schildern, bzw. die ersten erlernten Sprachkenntnisse anwenden. Wobei "Jeg har Halsbrand" eventuel sogar der deutsche Apotheker verstehen würde. ;) 
+Wie fast überall in Dänemark muss man in den meisten Apotheken ein Nummer ziehen. Wird die Nummer aufgerufen muss man zu entsprechenden Verkaufstheke gehen und sein Anliegen schildern, bzw. die ersten erlernten Sprachkenntnisse anwenden. Wobei "Jeg har Halsbrand" eventuel sogar der deutsche Apotheker verstehen würde. ;) 
 
 Anders als in Deutschland, wo man für verschreibungspflichtige Medikamente mit einem Rezeptlaufzettel vom Arzt vorzeigen muss, zeigt man hier nur sein Krankenkärtchen oder nennt die CPR-Number und schon kann der Apotheker oder die Apothekerin einsehen was verschrieben wurde. 
 
