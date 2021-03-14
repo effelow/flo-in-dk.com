@@ -1,10 +1,8 @@
 ---
-title: To be continued. Stay tuned!
-date: 2020-05-10 01:07:30
+title: Jeg har Halsbrand - Apotheke in Dänemark
+date: 2021-03-14 01:07:30
 tags:
 ---
-
-Jeg har Halsbrand - Apotheke in Dänemark
 
 Der Gang zur Apotheke gibt es auf den ersten Blick nichts Auffälliges. In den Verkaufsräumen werden Hustenbonbons, Zahnpasta und Regenschirme angeboten. Die verschreibungspflichtigen, sowie nicht verschreibungspflichtigen Medikamente gibt es hinter der Theke. 
 
