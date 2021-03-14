@@ -35,7 +35,7 @@ jobs:
         aws-access-key-id: ${{ secrets.CDK_DEPLOYER_AWS_ACCESS_KEY_ID }} 
         aws-secret-access-key: ${{ secrets.CDK_DEPLOYER_AWS_SECRET_ACCESS_KEY }} 
         aws-region: ${{ secrets.AWS_REGION }} 
-    - name: cdk deploy
+    - name: CDK Deploy
       run: | 
         cdk deploy --context domain=${{ secrets.DOMAIN }} --context subdomain=${{ secrets.SUBDOMAIN }} --require-approval never
 
