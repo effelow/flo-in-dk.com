@@ -1,9 +1,9 @@
 # Hexo Blog - flo-in-dk.com
 
 ##  Description
-The project contains my personal blog content. As part of the technology to build this blog I used the Hexo Framework, a static site generator. These type of frameworks follow a new style of site building called Jamstack. New blog posts can be written in markdown language. The main advantage of Jamstack websites however is that they do not depend on a  webserver which, in turn, promises better dev experience, better performance, higher security. 
+The project contains my personal blog content. As part of the technology to build this blog I used the Hexo Framework, a static site generator. These types of frameworks follow a new style of site building called Jamstack. New blog posts can be written in so called markdown language. The main advantage of Jamstack websites is that they do not depend on any webserver which in turn promises better development experience, better performance, higher security. 
 
-Build and Deployment work by using the new Actions Feature from Github. Target hosting platform is AWS S3 Static Web Hosting.
+Build and Deployment work by using the Action Workflow Feature from Github. Target hosting platform is AWS S3 Static Web Hosting. 
 
 
 ## Work from others
@@ -45,10 +45,13 @@ Since it is a one person project, the Github Actions is triggered on push events
 $ git add .; git commit -m "test deploy"; git push
 ```
 
-For the deployement of the infrastructure, please note the [infrastructure-code] section.
+For the deployment of the infrastructure, please note the [infrastructure-code] section.
 
 ## Future Work
 
-* Use infrastructure-as-code approach to deploy S3 Deployer User and inline policy to AWS Account
-* Setup a more user-friendly domain name
-* Equipe the Static Website with a valide SSL Server Certificate
+* [ ] Use infrastructure-as-code approach to deploy S3 Deployer User and inline policy to AWS Account
+* [x] Setup a more user-friendly domain name
+* [x] Equip the static website with a valid SSL Server Certificate
+* [ ] Remove .jpg files from git source code version control and store in S3 directly
+* [ ] Separate blog content from source code content
+* [ ] Write more content
