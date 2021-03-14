@@ -1,4 +1,4 @@
-# Hexo Blog - flo-in-dk.com
+# Hexo Blog - flo-in-dk.andthe.world
 
 ##  Description
 The project contains my personal blog content. As part of the technology to build this blog I used the Hexo Framework, a static site generator. These types of frameworks follow a new style of site building called Jamstack. New blog posts can be written in so called markdown language. The main advantage of Jamstack websites is that they do not depend on any webserver which in turn promises better development experience, better performance, higher security. 
